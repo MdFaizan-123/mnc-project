@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>mE n CAMPUS - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&family=Caveat:wght@700&family=Goldman&family=Inter:wght@500&family=Jersey+20&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Image -->
+        <div class="background"></div>
+        
+        <!-- Moon Icon - Top Right Corner -->
+        <div class="moon-icon-container" id="darkModeToggle">
+            <img src="assets/moon-icon.svg" alt="Moon" class="moon-icon">
+        </div>
+        
+        <!-- Left Side - Login Form -->
+        <div class="left-side">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="mE n CAMPUS Logo" class="logo">
+                <h1 class="logo-text">mE n CAMPUS</h1>
+            </div>
+            
+            <!-- Login Form Card -->
+            <div class="login-card">
+                <div class="login-header">
+                    <h2 class="login-title">LOGIN</h2>
+                    <div class="student-selector" id="studentSelector">
+                        <span class="student-text">Student</span>
+                        <img src="assets/down-arrow.png" alt="Dropdown" class="dropdown-arrow">
+                    </div>
+                </div>
+                
+                <!-- Email Input -->
+                <div class="input-container">
+                    <input type="text" id="email" class="form-input" placeholder="email">
+                </div>
+                
+                <!-- Password Input -->
+                <div class="input-container password-container">
+                    <input type="password" id="password" class="form-input" placeholder="Password">
+                    <div class="forget-button" id="forgetPassword">
+                        <span class="forget-text">I Forget</span>
+                    </div>
+                </div>
+                
+                <!-- "Let's go" Button -->
+                <button class="lets-go-button" id="loginButton">
+                    <span class="lets-go-text">Let's go</span>
+                </button>
+            </div>
+            
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                <div class="welcome-group">
+                    <span class="welcome-we">We</span>
+                    <span class="welcome-lcome">lcome</span>
+                </div>
+                <div class="banner-content">
+                    <div class="banner-left">
+                        <div class="banner-logo-text">mE n CAMPUS</div>
+                    </div>
+                    <div class="banner-right">
+                        <div class="discover-text">discover</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Side - Info Panel -->
+        <div class="right-side">
+            <!-- Top Bar - Date and Weather -->
+            <div class="top-bar">
+                <div class="date-info">
+                    <div class="date-large" id="currentDate">17</div>
+                    <div class="date-month" id="currentMonth">August 2025</div>
+                </div>
+                <div class="weather-info">
+                    <img src="assets/weather-icon.svg" alt="Weather" class="weather-icon">
+                    <span class="weather-text" id="weatherText">Rain 29c</span>
+                </div>
+            </div>
+            
+            <!-- Clock Image -->
+            <div class="clock-container">
+                <img src="assets/clock.png" alt="Clock" class="clock-image">
+            </div>
+            
+            <!-- Login Using Section -->
+            <div class="login-using-section">
+                <div class="login-using-text">Already a user? Login Using</div>
+                <div class="biometric-section">
+                    <div class="biometric-option" id="faceIdBtn">
+                        <img src="assets/face-scan-icon.svg" alt="Face ID" class="biometric-icon">
+                        <span class="biometric-text">Face ID</span>
+                    </div>
+                    <div class="biometric-option" id="biometricBtn">
+                        <img src="assets/fingerprint-icon.svg" alt="Biometric" class="biometric-icon">
+                        <span class="biometric-text">Biometric</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Register Section -->
+            <div class="register-section">
+                <div class="register-text" id="registerLink">New user? Register Here</div>
+                <div class="down-arrow-button" id="downArrow">
+                    <img src="assets/down-arrow.png" alt="Down Arrow" class="down-arrow-icon">
+                </div>
+            </div>
+            
+            <!-- Bottom mE n CAMPUS text -->
+            <div class="bottom-logo-text">mE n CAMPUS</div>
+        </div>
+    </div>
+    
+    <!-- Student Dropdown Menu -->
+    <div class="student-dropdown" id="studentDropdown">
+        <div class="dropdown-option" data-value="student">Student</div>
+        <div class="dropdown-option" data-value="faculty">Faculty</div>
+        <div class="dropdown-option" data-value="admin">Admin</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
